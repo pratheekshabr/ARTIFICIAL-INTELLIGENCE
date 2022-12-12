@@ -33,7 +33,7 @@ Followig is the Breadth-First-Search<br>
 
 
 <b>2.Write a program to implement Depth First Search using Python</b><br>
-#Using a python ddictionary to act as an adjacency list<br>
+#Using a python dictionary to act as an adjacency list<br>
 graph={<br>
     '5':['3','7'],<br>
     '3':['2','4'],<br>
