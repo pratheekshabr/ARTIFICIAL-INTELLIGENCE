@@ -55,5 +55,14 @@ def dfs(visited,graph,node):#function for dfs<br>
 #Driver code<br>
 print("Following is the Depth-First-Search")  <br> 
 dfs(visited,graph,'5')<br>
-<b><i>OUTPUT:</i></b>
+<b><i>OUTPUT:</i></br>
+Following is the Depth-First-Search<br>
+5<br>
+3<br>
+2<br>
+1<br>
+4<br>
+8<br>
+7<br>
+6<br></b>
    
