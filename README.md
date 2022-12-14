@@ -148,7 +148,7 @@ Steps:<br>
 3 3<br>
 4 2<br>
 0 2<br>
-True</b><br>
+True</b><br><br>
 <b>5.Write a program to implement Tower of Hanoi using python</b><br>
 def TowerOfHanoi(n,source,destination,auxiliary):<br>
     if n==1:<br>
