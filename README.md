@@ -85,7 +85,7 @@ def best_first_search(source,target,n):<br>
             if visited[v]==False:<br>
                 visited[v]=True<br>
                 pq.put((c,v))<br>
-            print()<br>
+            #print()<br>
           #for adding edges to graph<br>
 def addedge(x,y,cost):<br>
     graph[x].append((y,cost))<br>
