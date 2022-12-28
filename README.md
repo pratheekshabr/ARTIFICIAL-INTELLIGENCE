@@ -205,7 +205,7 @@ list=[]<br>
 for i in range(d):<br>
     list.append(hypo[i])<br>
 print(list)<br>
-OUTPUT:<BR>
+<b>OUTPUT:<BR>
  The given training examples are:<BR><br>
 ['Sunny', 'Warm', 'Normal', 'Strong', 'Warm', 'Same', 'Yes']<BR><br>
 ['Sunny', 'Warm', 'High', 'Strong', 'Warm', 'Same', 'Yes']<BR><br>
@@ -223,7 +223,7 @@ OUTPUT:<BR>
 ['Sunny', 'Warm', '?', 'Strong', '?', '?']<br>
 
  The maximally specific Find-s hypothesis for the given training examples is<br>
-['Sunny', 'Warm', '?', 'Strong', '?', '?']<br>
+ ['Sunny', 'Warm', '?', 'Strong', '?', '?']</b><br>
 
 
    
