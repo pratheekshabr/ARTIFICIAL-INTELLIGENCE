@@ -167,7 +167,43 @@ Move disk 3 from source A to destination B<br>
 Move disk 1 from source C to destination A<br>
 Move disk 2 from source C to destination B<br>
 Move disk 1 from source A to destination B</b><br>
-
+<b>6.
+import csv<br>
+hypo=['%','%','%','%','%','%']<br>
+with open('ws.csv') as csv_file:<br>
+    readcsv=csv.reader(csv_file,delimiter=',')<br>
+    data=[]<br>
+    print("\n The given training examples are:")<br>
+    for row in readcsv:<br>
+        print(row)<br>
+        if row[len(row)-1]=='Yes':<br><br>
+            data.append(row)<br>
+print("\n The positive examples are:")<br>
+for x in data:<br>
+    print(x)<br>
+TotalExamples=len(data)<br>
+i=0<br>
+j=0<br>
+k=0<br>
+print("\n the steps of the find -s algorithm are\n",hypo)<br>
+list=[]<br>
+p=0<br>
+d=len(data[p])-1<br>
+for j in range(d):<br><br>
+    list.append(data[i][j])<br>
+hypo=list<br>
+for i in range(1,TotalExamples):
+    for k in range(d):<br>
+        if hypo[k]!=data[i][k]:<br>
+            hypo[k]='?'<br>
+        else:<br>
+             hypo[k]<br>
+    print(hypo)<br>
+print("\n The maximally specific Find-s hypothesis for the given training examples is");<br>
+list=[]<br>
+for i in range(d):<br>
+    list.append(hypo[i])<br>
+print(list)<br>
 
 
 
