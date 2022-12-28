@@ -167,7 +167,7 @@ Move disk 3 from source A to destination B<br>
 Move disk 1 from source C to destination A<br>
 Move disk 2 from source C to destination B<br>
 Move disk 1 from source A to destination B</b><br>
-<b>6.
+<b>6.Write a program to implement the FIND-S Algorithm for finding the  most specific hypothesis based on a given set of training data samples.  Read the training data from a .CSV file.</b>
 import csv<br>
 hypo=['%','%','%','%','%','%']<br>
 with open('ws.csv') as csv_file:<br>
@@ -204,6 +204,7 @@ list=[]<br>
 for i in range(d):<br>
     list.append(hypo[i])<br>
 print(list)<br>
+OUTPUT:<BR>
 
 
 
