@@ -166,7 +166,8 @@ Move disk 1 from source B to destination C<br>
 Move disk 3 from source A to destination B<br>
 Move disk 1 from source C to destination A<br>
 Move disk 2 from source C to destination B<br>
-Move disk 1 from source A to destination B</b><br>
+Move disk 1 from source A to destination B</b><br><BR>
+
 <b>6.Write a program to implement the FIND-S Algorithm for finding the  most specific hypothesis based on a given set of training data samples.  Read the training data from a .CSV file.</b>
 import csv<br>
 hypo=['%','%','%','%','%','%']<br>
@@ -205,7 +206,24 @@ for i in range(d):<br>
     list.append(hypo[i])<br>
 print(list)<br>
 OUTPUT:<BR>
+ The given training examples are:<BR><br>
+['Sunny', 'Warm', 'Normal', 'Strong', 'Warm', 'Same', 'Yes']<BR><br>
+['Sunny', 'Warm', 'High', 'Strong', 'Warm', 'Same', 'Yes']<BR><br>
+['Rainy', 'Cold', 'High', 'Strong', 'Warm', 'Change', 'No']<BR><br>
+['Sunny', 'Warm', 'High', 'Strong', 'Cool', 'Change', 'Yes']<BR><br>
 
+ The positive examples are:<BR><br>
+['Sunny', 'Warm', 'Normal', 'Strong', 'Warm', 'Same', 'Yes']<BR><br>
+['Sunny', 'Warm', 'High', 'Strong', 'Warm', 'Same', 'Yes']<BR><br>
+['Sunny', 'Warm', 'High', 'Strong', 'Cool', 'Change', 'Yes']<BR><br>
+
+ the steps of the find -s algorithm are<BR><br>
+ ['%', '%', '%', '%', '%', '%']<br>
+['Sunny', 'Warm', '?', 'Strong', 'Warm', 'Same']<br>
+['Sunny', 'Warm', '?', 'Strong', '?', '?']<br>
+
+ The maximally specific Find-s hypothesis for the given training examples is<br>
+['Sunny', 'Warm', '?', 'Strong', '?', '?']<br>
 
 
    
