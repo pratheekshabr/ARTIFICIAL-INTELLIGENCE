@@ -205,7 +205,7 @@ list=[]<br>
 for i in range(d):<br>
     list.append(hypo[i])<br>
 print(list)<br>
-<b>OUTPUT:<BR>
+<b><i>OUTPUT:</i><BR>
  The given training examples are:<BR><br>
 ['Sunny', 'Warm', 'Normal', 'Strong', 'Warm', 'Same', 'Yes']<BR><br>
 ['Sunny', 'Warm', 'High', 'Strong', 'Warm', 'Same', 'Yes']<BR><br>
@@ -223,7 +223,51 @@ print(list)<br>
 ['Sunny', 'Warm', '?', 'Strong', '?', '?']<br>
 
  The maximally specific Find-s hypothesis for the given training examples is<br>
- ['Sunny', 'Warm', '?', 'Strong', '?', '?']</b><br>
+ ['Sunny', 'Warm', '?', 'Strong', '?', '?']</b><br><br>
+<b>7. Write a Program to Implement N-Queens Problem using Python. </b><br>
+global N<br>
+N = 4<br>
+def printSolution(board):<br>
+    for i in range(N):<br>
+        for j in range(N):<br>
+            print (board[i][j], end = " ")<br>
+        print()<br>
 
+def isSafe(board, row, col):<br>
+    for i in range(col):<br>
+        if board[row][i] == 1:<br>
+            return False<br>
 
+    for i, j in zip(range(row, -1, -1),range(col, -1, -1)):<br>
+        if board[i][j] == 1:<br>
+            return False<br>
+
+    for i, j in zip(range(row, N, 1),range(col, -1, -1)):<br>
+        if board[i][j] == 1:<br>
+            return False<br>
+    return True<br>
+
+def solveNQUtil(board, col):<br>
+    if col >= N:<br>
+        return True<br>
+    for i in range(N):<br>
+        if isSafe(board, i, col):<br>
+            board[i][col] = 1<br>
+            if solveNQUtil(board, col + 1) == True:<br>
+                return True<br>
+            board[i][col] = 0<br>
+    return False<br>
+
+def solveNQ():<br>
+    board = [ [0, 0, 0, 0],<br>
+             [0, 0, 0, 0],<br>
+             [0, 0, 0, 0],<br>
+             [0, 0, 0, 0] ]<br>
+    if solveNQUtil(board, 0) == False:<br>
+        print ("Solution does not exist")<br>
+        return False<br>
+    printSolution(board)<br>
+    return True<br>
+solveNQ()<br>
+<b><i>OUTPUT:</i></b>
    
