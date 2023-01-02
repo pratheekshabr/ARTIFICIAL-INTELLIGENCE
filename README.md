@@ -270,4 +270,9 @@ def solveNQ():<br>
     return True<br>
 solveNQ()<br>
 <b><i>OUTPUT:</i></b>
+    0 0 1 0 <br>
+1 0 0 0 <br>
+0 0 0 1 <br>
+0 1 0 0 <br>
+True<br>
    
