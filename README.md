@@ -275,7 +275,7 @@ solveNQ()<br>
 0 0 0 1 <br>
 0 1 0 0 <br>
 True<b><br><br>
- <b>8.Write a Program to Implement A* algorithm using Python.</b><br>
+<b>8.Write a Program to Implement A* algorithm using Python.</b><br>
      def aStarAlgo(start_node, stop_node):<br>
     open_set = set(start_node)<br>
     closed_set = set()<br>
