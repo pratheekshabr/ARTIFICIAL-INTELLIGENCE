@@ -275,7 +275,7 @@ solveNQ()<br>
 0 0 0 1 <br>
 0 1 0 0 <br>
 True<b><br><br>
- <b>8.
+ <b>8.</b>
      def aStarAlgo(start_node, stop_node):<br>
     open_set = set(start_node)<br>
     closed_set = set()<br>
@@ -374,6 +374,9 @@ Graph_nodes = {<br>
 }
 
 aStarAlgo('A', 'J')<br>
+<b><i>OUTPUT:</i><br>
+Path found: ['A', 'F', 'G', 'I', 'J']<br>
+['A', 'F', 'G', 'I', 'J']<br><br>
 
 
  
