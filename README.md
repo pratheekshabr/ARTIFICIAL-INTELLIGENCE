@@ -378,7 +378,7 @@ aStarAlgo('A', 'J')<br>
 Path found: ['A', 'F', 'G', 'I', 'J']<br>
 ['A', 'F', 'G', 'I', 'J']<br><br>
 
-<b><i>9.8-Puzzle</b></i><br>
+<b>9.8-Puzzle</b><br>
 import copy<br>
 from heapq import heappush, heappop<br>
 n = 3<br>
@@ -469,6 +469,6 @@ final = [ [ 1, 2, 3 ],<br>
          [ 0, 7, 4 ] ]<br>
 empty_tile_pos = [ 1, 2 ]<br>
 solve(initial, empty_tile_pos, final)<br>
-
+    <b><i>OUTPUT:</b></i><br>
  
   
