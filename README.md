@@ -470,20 +470,20 @@ final = [ [ 1, 2, 3 ],<br>
 empty_tile_pos = [ 1, 2 ]<br>
 solve(initial, empty_tile_pos, final)<br>
     <b><i>OUTPUT:</b></i><br>
- 1  2  3  <br>
+ 1  2  3 <br>
 5  6  0  <br>
 7  8  4  <br><br>
 
 1  2  3 <br> 
-5  0  6<br>  
-7  8  4 <br> <br>
+5  0  6 <br>  
+7  8  4 <br><br>
 
-1  2  3  <br>
+1  2  3 <br>
 5  8  6 <br> 
-7  0  4 <br> <br>
+7  0  4 <br><br>
 
 1  2  3 <br> 
 5  8  6 <br> 
-0  7  4 <br> <br>
-<br>
+0  7  4 <br><br>
+
   
